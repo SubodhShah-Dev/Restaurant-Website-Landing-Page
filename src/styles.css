@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .centered {
+    @apply flex items-center justify-center;
+  }
+
+  .textGradient {
+    @apply bg-primary bg-clip-text text-transparent transition-all delay-75 duration-300 ease-in-out hover:bg-secondary;
+  }
+
+  .navLink {
+    @apply centered border-r-[1px] border-r-white text-[16px] font-semibold md:mr-[2vw] md:pr-[2.5vw] lg:mr-[3vw] lg:pr-[3vw] lg:tracking-widest;
+  }
+}
