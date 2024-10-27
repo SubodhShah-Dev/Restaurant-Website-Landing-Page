@@ -11,7 +11,7 @@ export default {
       },
       textColor: {
         primary: '#',
-        secondary: '',
+        secondary: '#',
         icons: '#00aaff',
       },
       backgroundImage: {

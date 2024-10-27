@@ -16,4 +16,9 @@
   .navLink {
     @apply centered border-r-[1px] border-r-white text-[16px] font-semibold md:mr-[2vw] md:pr-[2.5vw] lg:mr-[3vw] lg:pr-[3vw] lg:tracking-widest;
   }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
 }

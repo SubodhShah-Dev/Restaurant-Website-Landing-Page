@@ -34,7 +34,7 @@
     <!-- start Navbar -->
     <header
       id="header"
-      class="sticky top-0 z-30 h-[64px] min-w-full bg-black px-4 text-white"
+      class="sticky top-0 z-30 h-[75px] min-w-full bg-black px-4 text-white md:h-[64px]"
     >
       <nav class="navbar flex h-full items-center justify-between">
         <section
@@ -98,12 +98,10 @@
     ></div>
     <div
       id="menuDrawer"
-      class="menuDrawer fixed left-0 top-0 z-40 h-full max-w-[75%] -translate-x-full rounded-md bg-primary px-4 transition-transform delay-150 duration-500 ease-in-out md:hidden h-md:h-[75%]"
+      class="menuDrawer scrollbar-thin fixed left-0 top-0 z-40 h-full max-w-[100vw] -translate-x-full overflow-y-scroll rounded-md bg-primary px-4 transition-transform delay-150 duration-500 ease-in-out md:hidden"
     >
-      <div class="menuWrapper text-black">
-        <section
-          class="menuTop flex h-[64px] items-center justify-between p-1 text-custom"
-        >
+      <div class="menuWrapper text-[20px] text-black">
+        <section class="menuTop flex h-[64px] items-center justify-between p-1">
           <div class="flex min-w-[100px] items-center justify-between p-1">
             <div>
               <img
@@ -136,9 +134,21 @@
             />
           </button>
         </section>
-        <hr class="my-4 border border-black" />
+        <hr class="my-6 border border-black" />
         <section class="menuCenter py-5">
-          <nav for="menuLinks" class="text-custom tracking-wide">
+          <div
+            class="mb-14 mt-3 flex items-center justify-between rounded-md border-black bg-white px-3 py-1 focus-within:border-[1px] focus-within:shadow-inner"
+          >
+            <input
+              class="h-full w-full outline-none"
+              type="text"
+              placeholder="Search"
+            />
+            <button title="Search" type="button">
+              <i class="fas fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <nav for="menuLinks" class="tracking-wide">
             <ul
               id="menuLinks "
               class="menuLinks flex flex-col items-center justify-center gap-10"
@@ -194,7 +204,7 @@
             </ul>
           </nav>
         </section>
-        <hr class="my-4 border border-black" />
+        <hr class="my-6 border border-black" />
         <section
           class="menuBottom whitespace-nowrap py-5 text-center text-[12px] font-light tracking-wide"
         >
@@ -209,11 +219,11 @@
       <!-- start Hero-Section -->
       <section
         id="hero-section"
-        class="hero-section relative flex h-[calc(100vh-64px)] w-full items-center justify-center"
+        class="hero-section relative flex h-[calc(100vh-75px)] w-full items-center justify-center md:h-[calc(100vh-64px)]"
       >
         <div
           id="backdrop"
-          class="absolute left-0 top-0 h-full w-full bg-black bg-opacity-20 md:bg-opacity-70"
+          class="absolute left-0 top-0 h-full w-full bg-black bg-opacity-20 md:bg-opacity-[0.67]"
         ></div>
         <picture class="-z-10 h-full w-full">
           <source srcset="/img/herolg.webp" media="(min-width: 768px)" />
@@ -221,12 +231,16 @@
           <img src="/img/herolg.webp" alt="Hero image" class="h-full w-full" />
         </picture>
         <div
-          class="heroInfo absolute m-auto w-[50%] cursor-default flex-col items-center justify-center text-custom text-white"
+          class="heroInfo absolute m-auto w-[55%] cursor-default flex-col items-center justify-center text-custom text-white"
         >
-          <h1 class="my-4 text-center font-cursive md:my-7">
-            Welcome to Your Favorite Dining Destination
+          <h1 class="my-4 text-center font-primary tracking-wider md:my-7">
+            Welcome to Your
+            <span class="font-semibold text-[#ff0000]"> ❤️ Favorite</span>
+            Dining Destination
           </h1>
-          <div class="text-center font-secondary text-[.5em]">
+          <div
+            class="text-center font-secondary text-[.5em] tracking-wider md:tracking-normal"
+          >
             <span>🍴</span>
             <span class="textGradient">
               Where every meal is a celebration of flavor.
