@@ -7,9 +7,7 @@ function navbarLinksFiller() {
   const path = pageUrl.split('/');
 
   const navigationPagesName = ['Home', 'About us', 'Menu', 'Contact us'];
-  const navigationPages = navigationPagesName.map((e) =>
-    e.toLowerCase().split(' ').join('')
-  );
+  const navigationPages = navigationPagesName.map((e) => e.toLowerCase().split(' ').join(''));
   navigationPages[0] = 'index';
 
   for (let index = 0; index < navigationPages.length; index++) {
@@ -45,10 +43,7 @@ function navbarLinksFiller() {
 
   // For index page
   if (`${path[3]}` === 'index.html') {
-    navLinksList.firstElementChild.setAttribute(
-      'class',
-      'navLink textGradient'
-    );
+    navLinksList.firstElementChild.setAttribute('class', 'navLink textGradient');
   }
 }
 

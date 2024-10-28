@@ -37,9 +37,7 @@
       class="sticky top-0 z-30 h-[75px] min-w-full bg-black px-4 text-white md:h-[64px]"
     >
       <nav class="navbar flex h-full items-center justify-between">
-        <section
-          class="navLeft flex max-h-full items-center justify-between p-1 text-custom"
-        >
+        <section class="navLeft flex max-h-full items-center justify-between p-1 text-custom">
           <div>
             <img
               class="md:w-[40px]"
@@ -58,17 +56,15 @@
           </div>
         </section>
         <section class="navCenter relative hidden md:block">
-          <label id="navLinksGroup">
+          <label for="navLinksGroup" id="navLinksGroup">
             <ul
               id="navLinksList"
               aria-labelledby="navLinksGroup"
-              class="flex flex-1 p-1"
+              class="flex flex-1 p-1 divide-x-2 divide-x-white"
             ></ul>
           </label>
         </section>
-        <section
-          class="navRight flex items-center justify-end p-1 md:justify-end"
-        >
+        <section class="navRight flex items-center justify-end p-1 md:justify-end">
           <button
             title="Menu"
             type="button"
@@ -79,11 +75,7 @@
           >
             <img src="/svg/hambar.svg" width="24" height="24" alt="Menu" />
           </button>
-          <button
-            type="button"
-            title="Login"
-            class="login hover: hidden cursor-pointer md:block"
-          >
+          <button type="button" title="Login" class="login hover: hidden cursor-pointer md:block">
             <img src="/svg/user.svg" width="24" height="24" alt="User Login" />
           </button>
         </section>
@@ -113,25 +105,13 @@
               />
             </div>
             <div class="px-2 text-center">
-              <label
-                for="CompanyName"
-                class="font-cursive font-semibold tracking-wider"
+              <label for="CompanyName" class="font-cursive font-semibold tracking-wider"
                 >David and Diners</label
               >
             </div>
           </div>
-          <button
-            title="Close button"
-            type="button"
-            id="closeBtn"
-            class="closeBtn cursor-pointer"
-          >
-            <img
-              src="/svg/close.svg"
-              width="24"
-              height="24"
-              alt="Close button"
-            />
+          <button title="Close button" type="button" id="closeBtn" class="closeBtn cursor-pointer">
+            <img src="/svg/close.svg" width="24" height="24" alt="Close button" />
           </button>
         </section>
         <hr class="my-6 border border-black" />
@@ -139,27 +119,16 @@
           <div
             class="mb-14 mt-3 flex items-center justify-between rounded-md border-black bg-white px-3 py-1 focus-within:border-[1px] focus-within:shadow-inner"
           >
-            <input
-              class="h-full w-full outline-none"
-              type="text"
-              placeholder="Search"
-            />
+            <input class="h-full w-full outline-none" type="text" placeholder="Search" />
             <button title="Search" type="button">
               <i class="fas fa-magnifying-glass"></i>
             </button>
           </div>
           <nav for="menuLinks" class="tracking-wide">
-            <ul
-              id="menuLinks "
-              class="menuLinks flex flex-col items-center justify-center gap-10"
-            >
-              <li
-                class="flex w-full items-center justify-start gap-5 text-white"
-              >
+            <ul id="menuLinks " class="menuLinks flex flex-col items-center justify-center gap-10">
+              <li class="flex w-full items-center justify-start gap-5 text-white">
                 <div class="p-2">
-                  <i
-                    class="fa-solid fa-house-chimney-window fa-beat-fade fa-xl"
-                  ></i>
+                  <i class="fa-solid fa-house-chimney-window fa-beat-fade fa-xl"></i>
                 </div>
                 <a
                   href="/index.html"
@@ -238,13 +207,9 @@
             <span class="font-semibold text-[#ff0000]"> ❤️ Favorite</span>
             Dining Destination
           </h1>
-          <div
-            class="text-center font-secondary text-[.5em] tracking-wider md:tracking-normal"
-          >
+          <div class="text-center font-secondary text-[.5em] tracking-wider md:tracking-normal">
             <span>🍴</span>
-            <span class="textGradient">
-              Where every meal is a celebration of flavor.
-            </span>
+            <span class="textGradient"> Where every meal is a celebration of flavor. </span>
             <span>🍕</span>
           </div>
         </div>
@@ -273,10 +238,7 @@
           id="border"
         />
 
-        <i
-          id="scrollToTop"
-          class="fas fa-arrow-up absolute cursor-pointer text-2xl text-white"
-        ></i>
+        <i id="scrollToTop" class="fas fa-arrow-up absolute cursor-pointer text-2xl text-white"></i>
       </svg>
     </section>
     <!-- end page-Tracker-Btn -->

@@ -20,15 +20,13 @@ function progressIcon() {
     });
   });
 
-  document
-    .getElementById('scrollToTop')
-    .addEventListener('click', function (event) {
-      event.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
+  document.getElementById('scrollToTop').addEventListener('click', function (event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
     });
+  });
 }
 
 export default progressIcon;

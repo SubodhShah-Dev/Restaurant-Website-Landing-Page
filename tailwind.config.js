@@ -15,10 +15,8 @@ export default {
         icons: '#00aaff',
       },
       backgroundImage: {
-        primary:
-          'linear-gradient(to right, #00f0ff, #00aaff, #0077ff, #0044ff)',
-        secondary:
-          'linear-gradient(to left, #00f0ff, #00aaff, #0077ff, #0044ff)',
+        primary: 'linear-gradient(to right, #00f0ff, #00aaff, #0077ff, #0044ff)',
+        secondary: 'linear-gradient(to left, #00f0ff, #00aaff, #0077ff, #0044ff)',
       },
       fontSize: {
         custom: 'clamp(1rem, 2.7vw, 3rem)',
@@ -28,8 +26,7 @@ export default {
         'h-lg': { raw: '(min-height: 1024px)' },
       },
       borderColor: {
-        primary:
-          'linear-gradient(to right, #00f0ff, #00aaff, #0077ff, #0044ff)',
+        primary: 'linear-gradient(to right, #00f0ff, #00aaff, #0077ff, #0044ff)',
       },
     },
   },
