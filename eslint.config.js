@@ -1,4 +1,3 @@
-// eslint.config.js
 import globals from 'globals';
 import js from '@eslint/js';
 import prettier from 'eslint-plugin-prettier';
