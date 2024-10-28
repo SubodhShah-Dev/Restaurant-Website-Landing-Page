@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Hotel Website, First Website for beginners, Website Template" />
+    <meta
+      name="keywords"
+      content="Business Website, First Website for beginners, Website Template"
+    />
     <meta
       name="description"
       content="Dummy Website for beginner developers to practice from. Feel free to copy the design if you like it for practicing your own development skills."
@@ -27,9 +30,12 @@
     <script type="module" src="/src/main.js"></script>
   </head>
 
-  <body class="bg-slate-50 font-primary">
+  <body class="bg-slate-50 font-primary relative -z-50">
     <!-- start Navbar -->
-    <header id="header" class="sticky top-0 h-[64px] min-w-full bg-black px-4 text-white">
+    <header
+      id="header"
+      class="sticky top-0 z-30 h-[75px] min-w-full bg-black px-4 text-white md:h-[64px] h-md:h-[8vh]"
+    >
       <nav class="navbar flex h-full items-center justify-between">
         <section class="navLeft flex max-h-full items-center justify-between p-1 text-custom">
           <div>
@@ -50,11 +56,11 @@
           </div>
         </section>
         <section class="navCenter relative hidden md:block">
-          <label id="navLinksGroup">
+          <label for="navLinksGroup" id="navLinksGroup">
             <ul id="navLinksList" aria-labelledby="navLinksGroup" class="flex flex-1 p-1"></ul>
           </label>
         </section>
-        <section class="navRight flex items-center justify-evenly p-1 md:justify-end">
+        <section class="navRight flex items-center justify-end p-1 md:justify-end">
           <button
             title="Menu"
             type="button"
@@ -65,9 +71,29 @@
           >
             <img src="/svg/hambar.svg" width="24" height="24" alt="Menu" />
           </button>
-          <button type="button" title="Login" class="login hover: hidden cursor-pointer md:block">
-            <img src="/svg/user.svg" width="24" height="24" alt="User Login" />
-          </button>
+          <ul class="social-media md:flex space-x-5 hidden">
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-facebook hover:text-icons transition-colors duration-300 delay-100 fa-lg"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-instagram hover:text-icons transition-colors duration-300 delay-100 fa-lg"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-twitter hover:text-icons transition-colors duration-300 delay-100 fa-lg"
+                ></i
+              ></a>
+            </li>
+          </ul>
         </section>
       </nav>
     </header>
@@ -76,14 +102,14 @@
     <!-- start Menu-Drawer -->
     <div
       id="backdrop"
-      class="fixed inset-0 hidden bg-black bg-opacity-60 transition-opacity delay-150 duration-500 ease-in-out md:hidden"
+      class="fixed inset-0 z-10 hidden bg-black bg-opacity-60 transition-opacity delay-150 duration-500 ease-in-out md:hidden"
     ></div>
     <div
       id="menuDrawer"
-      class="menuDrawer fixed left-0 top-0 h-full max-w-[75%] -translate-x-full rounded-md bg-primary px-4 transition-transform delay-150 duration-500 ease-in-out md:hidden h-md:h-[75%]"
+      class="menuDrawer scrollbar-thin fixed left-0 top-0 z-40 h-screen max-w-[100vw] -translate-x-full overflow-y-scroll rounded-md bg-primary px-4 transition-transform delay-150 duration-500 ease-in-out md:hidden"
     >
-      <div class="menuWrapper text-black">
-        <section class="menuTop flex h-[64px] items-center justify-between p-1 text-custom">
+      <div class="menuWrapper text-[20px]">
+        <section class="menuTop flex h-[64px] items-center justify-between p-1">
           <div class="flex min-w-[100px] items-center justify-between p-1">
             <div>
               <img
@@ -104,13 +130,21 @@
             <img src="/svg/close.svg" width="24" height="24" alt="Close button" />
           </button>
         </section>
-        <hr class="my-4 border border-black" />
+        <hr class="my-6 border border-black" />
         <section class="menuCenter py-5">
-          <nav for="menuLinks" class="text-custom tracking-wide">
+          <div
+            class="mb-14 mt-3 flex items-center justify-between rounded-md border-black bg-white px-3 py-1 focus-within:border-[1px] focus-within:shadow-inner"
+          >
+            <input class="h-full w-full outline-none" type="text" placeholder="Search" />
+            <button title="Search" type="button">
+              <i class="fas fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <nav for="menuLinks" class="tracking-wide">
             <ul id="menuLinks " class="menuLinks flex flex-col items-center justify-center gap-10">
-              <li class="flex w-full items-center justify-start gap-5">
+              <li class="flex w-full items-center justify-start gap-5 text-white">
                 <div class="p-2">
-                  <i class="fa-solid fa-house-chimney-window fa-xl"></i>
+                  <i class="fa-solid fa-house-chimney-window fa-beat-fade fa-xl"></i>
                 </div>
                 <a
                   href="/index.html"
@@ -119,9 +153,9 @@
                   >Home</a
                 >
               </li>
-              <li class="flex w-full items-center justify-start gap-5 text-white">
+              <li class="flex w-full items-center justify-start gap-5">
                 <div class="p-2">
-                  <i class="fa-solid fa-book-open fa-beat-fade fa-xl"></i>
+                  <i class="fa-solid fa-book-open fa-xl"></i>
                 </div>
                 <a
                   href="/src/pages/aboutus.html"
@@ -138,7 +172,7 @@
                   href="/src/pages/menu.html"
                   aria-label="Explore all the services and products that we provide"
                   class="transition-all delay-75 duration-300 ease-linear hover:text-white"
-                  >Menu</a
+                  >Services</a
                 >
               </li>
               <li class="flex w-full items-center justify-start gap-5">
@@ -155,21 +189,112 @@
             </ul>
           </nav>
         </section>
-        <hr class="my-4 border border-black" />
+        <hr class="my-6 border border-black" />
         <section
           class="menuBottom whitespace-nowrap py-5 text-center text-[12px] font-light tracking-wide"
         >
           <p>© 2024 David and Diners.</p>
           <p>All rights reserved.</p>
         </section>
+        <section class="social-icons">
+          <ul class="social-media flex space-x-5 items-center justify-around my-5 w-[60%] m-auto">
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-facebook hover:text-white transition-colors duration-300 delay-100 fa-lg"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-instagram hover:text-white transition-colors duration-300 delay-100 fa-lg"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-twitter hover:text-white transition-colors duration-300 delay-100 fa-lg"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </section>
+        <section class="contact-info my-10 text-custom">
+          <div class="flex-col justify-start items-center" role="Contact">
+            <div class="centered mb-1">
+              <label for="phone-no" class="font-bold"
+                >📞Dial :
+                <span id="phone-no" class="font-light font-secondary tracking-tight"
+                  >987655894302</span
+                ></label
+              >
+            </div>
+            <div class="centered">
+              <label for="email" class="font-bold"
+                >✉️Email :
+                <span id="email" class="font-light font-secondary tracking-tight"
+                  >David.diners327@gmail.com</span
+                ></label
+              >
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <!-- end Menu-Drawer -->
 
-    <main>
+    <main class="bg-zinc-900 -z-40 relative">
       <!-- start Hero-Section -->
-      <section id="hero-section" class="hero-section"></section>
+      <section
+        id="hero-section"
+        class="hero-section relative flex h-[calc(100vh-75px)] w-full items-center justify-center md:h-[calc(100vh-64px)]"
+      >
+        <div
+          id="backdrop"
+          class="absolute left-0 top-0 h-full w-full bg-black bg-opacity-20 md:bg-opacity-45"
+        ></div>
+        <picture class="-z-10 h-full w-full">
+          <source srcset="/img/herolg.webp" media="(min-width: 768px)" />
+          <source srcset="/img/herosm.webp" media="(max-width: 767px)" />
+          <img src="/img/herolg.webp" alt="Hero image" class="h-full w-full" />
+        </picture>
+        <div
+          class="hero-info absolute m-auto w-[60%] cursor-default flex-col items-center justify-center text-white leading-relaxed text-[4vw] md:text-[3vw]"
+        >
+          <h1 class="my-4 text-center font-primary tracking-wider md:my-7 font-extrabold">
+            Welcome to Your
+            <span class="font-semibold text-[#ff0000]"> ❤️ Favorite</span>
+            Dining Destination
+          </h1>
+          <div
+            class="text-center font-secondary text-[.4em] tracking-wider md:tracking-normal font-semibold mb-[30px] md:mb-12"
+          >
+            <span>🍴</span>
+            <span class="textGradient"> Where every meal is a celebration of flavor. </span>
+            <span>🍕</span>
+          </div>
+          <div class="flex items-center justify-center">
+            <button
+              type="button"
+              class="text-black px-[7px] py-[1px] border-[1px] text-[.7em] md:text-[.5em] font-bold md:border-[2.5px] border-primary rounded-2xl bg-white hover:bg-primary-light hover:border-white transition-all duration-500 delay-75"
+            >
+              <span
+                class="flex items-center gap-3 transition-all hover:text-white delay-200 duration-700"
+              >
+                Book now <i class="fa-solid fa-arrow-right fa-beat-fade"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+      </section>
       <!-- end Hero-Section -->
+
+      <!-- start  -->
+      <section class="border-red-500 h-screen w-full border-[5px]"></section>
+      <section class="border-red-500 h-screen w-full border-[5px]"></section>
+      <section class="border-red-500 h-screen w-full border-[5px]"></section>
     </main>
 
     <!-- start page-Tracker-Btn -->

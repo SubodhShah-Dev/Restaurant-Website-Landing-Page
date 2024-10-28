@@ -10,23 +10,32 @@ export default {
         cursive: ['Courgette', 'cursive'],
       },
       textColor: {
-        primary: '#',
+        primary: {
+          light: '#00aaff',
+          bold: '#0044ff',
+        },
         secondary: '#',
-        icons: '#00aaff',
+        icons: '#00f0ff',
       },
       backgroundImage: {
         primary: 'linear-gradient(to right, #00f0ff, #00aaff, #0077ff, #0044ff)',
         secondary: 'linear-gradient(to left, #00f0ff, #00aaff, #0077ff, #0044ff)',
       },
       fontSize: {
-        custom: 'clamp(1rem, 2.7vw, 3rem)',
+        custom: 'clamp(.5rem, 2.7vw, 3rem)',
       },
       screens: {
         'h-md': { raw: '(min-height: 768px)' },
         'h-lg': { raw: '(min-height: 1024px)' },
       },
+      backgroundColor: {
+        primary: {
+          light: '#00aaff',
+          bold: '#0044ff',
+        },
+      },
       borderColor: {
-        primary: 'linear-gradient(to right, #00f0ff, #00aaff, #0077ff, #0044ff)',
+        primary: '#00aaff',
       },
     },
   },
