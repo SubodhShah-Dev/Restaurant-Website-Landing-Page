@@ -10,6 +10,8 @@ build/
 
 # Visual Studio Code settings
 .vscode/
+.pretierrc.json
+eslint.config.json
 
 # Logs
 *.log
