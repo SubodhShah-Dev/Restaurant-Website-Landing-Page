@@ -11,13 +11,28 @@
       name="description"
       content="Dummy Website for beginner developers to practice from. Feel free to copy the design if you like it for practicing your own development skills."
     />
+    <link rel="preload" href="/img/herolg.webp" as="image" />
+    <link rel="preload" href="/img/herosm.webp" as="image" />
     <link rel="shortcut icon" href="/svg/mainlogo.svg" type="image/x-icon" />
     <title>David and Diners</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
     <link
       rel="stylesheet"
@@ -25,6 +40,8 @@
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      media="print"
+      onload="this.media='all'"
     />
     <link rel="stylesheet" href="/src/main.css" />
     <script type="module" src="/src/main.js"></script>
@@ -50,14 +67,18 @@
           <div class="px-2 text-center">
             <label
               for="CompanyName"
-              class="textGradient centered font-cursive font-extrabold tracking-wider md:text-[18px] lg:text-[22px] lg:tracking-widest"
+              class="textGradient centered font-cursive font-extrabold md:text-[18px] lg:text-[22px] lg:"
               >DAVID & DINERS</label
             >
           </div>
         </section>
         <section class="navCenter relative hidden md:block">
           <label for="navLinksGroup" id="navLinksGroup">
-            <ul id="navLinksList" aria-labelledby="navLinksGroup" class="flex flex-1 p-1">
+            <ul
+              id="navLinksList"
+              aria-labelledby="navLinksGroup"
+              class="flex flex-1 p-1 font-secondary"
+            >
               <li class="navLink">
                 <a class="hover:textGradient cursor-pointer" href="/index.html">HOME</a>
               </li>
@@ -90,21 +111,21 @@
           </button>
           <ul class="social-media md:flex space-x-5 hidden">
             <li>
-              <a href=""
+              <a href="#"
                 ><i
                   class="fa-brands fa-facebook hover:text-icons transition-colors duration-300 delay-100 fa-lg"
                 ></i
               ></a>
             </li>
             <li>
-              <a href=""
+              <a href="#"
                 ><i
                   class="fa-brands fa-instagram hover:text-icons transition-colors duration-300 delay-100 fa-lg"
                 ></i
               ></a>
             </li>
             <li>
-              <a href=""
+              <a href="#"
                 ><i
                   class="fa-brands fa-twitter hover:text-icons transition-colors duration-300 delay-100 fa-lg"
                 ></i
@@ -138,9 +159,7 @@
               />
             </div>
             <div class="px-2 text-center">
-              <label for="CompanyName" class="font-cursive font-semibold tracking-wider"
-                >DAVID & DINERS</label
-              >
+              <label for="CompanyName" class="font-cursive font-semibold">DAVID & DINERS</label>
             </div>
           </div>
           <button title="Close button" type="button" id="closeBtn" class="closeBtn cursor-pointer">
@@ -157,7 +176,7 @@
               <i class="fas fa-magnifying-glass"></i>
             </button>
           </div>
-          <nav for="menuLinks" class="tracking-wide">
+          <nav for="menuLinks" class="font-secondary">
             <ul id="menuLinks " class="menuLinks flex flex-col items-center justify-center gap-10">
               <li class="flex w-full items-center justify-start gap-5">
                 <div class="p-2">
@@ -207,9 +226,7 @@
           </nav>
         </section>
         <hr class="my-6 border border-black" />
-        <section
-          class="menuBottom whitespace-nowrap py-5 text-center text-[12px] font-light tracking-wide"
-        >
+        <section class="menuBottom whitespace-nowrap py-5 text-center text-[12px] font-light">
           <p>© 2024 David and Diners.</p>
           <p>All rights reserved.</p>
         </section>
@@ -243,15 +260,13 @@
             <div class="centered mb-1">
               <label for="phone-no" class="font-bold"
                 >📞Dial :
-                <span id="phone-no" class="font-light font-secondary tracking-tight"
-                  >987655894302</span
-                ></label
+                <span id="phone-no" class="font-light font-secondary">987655894302</span></label
               >
             </div>
             <div class="centered">
               <label for="email" class="font-bold"
                 >✉️Email :
-                <span id="email" class="font-light font-secondary tracking-tight"
+                <span id="email" class="font-light font-secondary"
                   >David.diners327@gmail.com</span
                 ></label
               >

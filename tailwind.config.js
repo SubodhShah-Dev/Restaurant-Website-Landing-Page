@@ -5,9 +5,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Roboto', 'sans-serif'],
-        secondary: ['Rubik', 'sans-serif'],
-        cursive: ['Courgette', 'cursive'],
+        primary: ['Montserrat', 'serif'],
+        secondary: ['Merriweather', 'sans-serif'],
+        cursiveHead: ['Lobster', 'sans-serif'],
+        cursivePara: ['Great Vibes', 'sans-serif'],
       },
       textColor: {
         primary: {
@@ -22,7 +23,7 @@ export default {
         secondary: 'linear-gradient(to left, #00f0ff, #00aaff, #0077ff, #0044ff)',
       },
       fontSize: {
-        custom: 'clamp(.5rem, 2.7vw, 3rem)',
+        custom: 'clamp(1rem, 2.7vw, 3rem)',
       },
       screens: {
         'h-md': { raw: '(min-height: 768px)' },

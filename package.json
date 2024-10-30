@@ -9,8 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build:css": "tailwindcss -i src/styles.css -o dist/output.css",
-    "watch:css": "tailwindcss -i src/styles.css -o dist/output.css --watch",
+    "build:css": "tailwindcss -i src/main.css -o dist/output.css",
+    "watch:css": "tailwindcss -i src/main.css -o dist/output.css --watch",
     "format": "prettier --write ."
   },
   "devDependencies": {
