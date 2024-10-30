@@ -1,4 +1,4 @@
-import './styles.css';
+import './main.css';
 import { gsap } from 'gsap';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
