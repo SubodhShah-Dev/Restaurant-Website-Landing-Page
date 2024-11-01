@@ -30,10 +30,11 @@ export default {
         'h-lg': { raw: '(min-height: 1024px)' },
       },
       backgroundColor: {
-        primary: {
+        secondary: {
           light: '#00aaff',
           bold: '#0044ff',
         },
+        custom: '#C0C0C0',
       },
       borderColor: {
         primary: '#00aaff',
