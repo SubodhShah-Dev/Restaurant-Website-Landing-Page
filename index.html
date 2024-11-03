@@ -47,7 +47,7 @@
     <script type="module" src="/src/main.js"></script>
   </head>
 
-  <body class="font-primary relative -z-50">
+  <body class="relative -z-50 font-primary">
     <!-- start Navbar -->
     <header
       id="header"
@@ -109,25 +109,25 @@
           >
             <img src="/svg/hambar.svg" width="24" height="24" alt="Menu" />
           </button>
-          <ul class="social-media md:flex space-x-5 hidden">
+          <ul class="social-media hidden space-x-5 md:flex">
             <li>
               <a href="#"
                 ><i
-                  class="fa-brands fa-facebook hover:text-icons transition-colors duration-300 delay-100 fa-lg"
+                  class="fa-brands fa-facebook fa-lg transition-colors delay-100 duration-300 hover:text-icons"
                 ></i
               ></a>
             </li>
             <li>
               <a href="#"
                 ><i
-                  class="fa-brands fa-instagram hover:text-icons transition-colors duration-300 delay-100 fa-lg"
+                  class="fa-brands fa-instagram fa-lg transition-colors delay-100 duration-300 hover:text-icons"
                 ></i
               ></a>
             </li>
             <li>
               <a href="#"
                 ><i
-                  class="fa-brands fa-twitter hover:text-icons transition-colors duration-300 delay-100 fa-lg"
+                  class="fa-brands fa-twitter fa-lg transition-colors delay-100 duration-300 hover:text-icons"
                 ></i
               ></a>
             </li>
@@ -159,7 +159,7 @@
               />
             </div>
             <div class="px-2 text-center">
-              <label for="CompanyName" class="font-cursive font-semibold r">DAVID & DINERS</label>
+              <label for="CompanyName" class="font-cursive r font-semibold">DAVID & DINERS</label>
             </div>
           </div>
           <button title="Close button" type="button" id="closeBtn" class="closeBtn cursor-pointer">
@@ -231,42 +231,42 @@
           <p>All rights reserved.</p>
         </section>
         <section class="social-icons">
-          <ul class="social-media flex space-x-5 items-center justify-around my-5 w-[60%] m-auto">
+          <ul class="social-media m-auto my-5 flex w-[60%] items-center justify-around space-x-5">
             <li>
               <a href=""
                 ><i
-                  class="fa-brands fa-facebook hover:text-white transition-colors duration-300 delay-100 fa-lg"
+                  class="fa-brands fa-facebook fa-lg transition-colors delay-100 duration-300 hover:text-white"
                 ></i
               ></a>
             </li>
             <li>
               <a href=""
                 ><i
-                  class="fa-brands fa-instagram hover:text-white transition-colors duration-300 delay-100 fa-lg"
+                  class="fa-brands fa-instagram fa-lg transition-colors delay-100 duration-300 hover:text-white"
                 ></i
               ></a>
             </li>
             <li>
               <a href=""
                 ><i
-                  class="fa-brands fa-twitter hover:text-white transition-colors duration-300 delay-100 fa-lg"
+                  class="fa-brands fa-twitter fa-lg transition-colors delay-100 duration-300 hover:text-white"
                 ></i
               ></a>
             </li>
           </ul>
         </section>
         <section class="contact-info my-10 text-custom">
-          <div class="flex-col justify-start items-center">
+          <div class="flex-col items-center justify-start">
             <div class="centered mb-1">
               <label for="phone-no" class="font-bold"
                 >📞Dial :
-                <span id="phone-no" class="font-light font-secondary">987655894302</span></label
+                <span id="phone-no" class="font-secondary font-light">987655894302</span></label
               >
             </div>
             <div class="centered">
               <label for="email" class="font-bold"
                 >✉️Email :
-                <span id="email" class="font-light font-secondary"
+                <span id="email" class="font-secondary font-light"
                   >David.diners327@gmail.com</span
                 ></label
               >
@@ -277,30 +277,30 @@
     </div>
     <!-- end Menu-Drawer -->
 
-    <main class="bg-black -z-40 relative flex flex-col gap-10 text-white">
+    <main class="relative -z-40 flex flex-col gap-10 bg-black text-white">
       <!-- start Hero-Section -->
       <section
         id="hero-section"
-        class="hero-section relative flex h-fit lg:h-[calc(100vh-75px)] w-full items-center justify-center"
+        class="hero-section relative flex h-fit w-full items-center justify-center lg:h-[calc(100vh-75px)]"
       >
         <div
           id="backdrop"
           class="absolute left-0 top-0 h-full w-full bg-black bg-opacity-20 lg:bg-opacity-100 lg:backdrop-blur-md"
         ></div>
         <picture class="-z-10 h-fit w-full lg:hidden">
-          <img src="/img/herosm.webp" alt="Lobby image" class="w-full aspect-[0.67]" />
+          <img src="/img/herosm.webp" alt="Lobby image" class="aspect-[0.67] w-full" />
         </picture>
         <div
-          class="hero-info absolute text-center lg:text-start m-auto w-[80%] cursor-default flex-col lg:left-14 lg:max-w-[50%] text-white leading-relaxed p-[1vw] lg:tracking-wider"
+          class="hero-info absolute m-auto w-[80%] cursor-default flex-col p-[1vw] text-center leading-relaxed text-white lg:left-14 lg:max-w-[50%] lg:text-start lg:tracking-wider"
         >
           <div class="hero-head mb-[3vh] flex flex-col gap-[1.5vh] lg:flex-col-reverse">
-            <div class="font-primary font-extrabold text-[5vw] lg:text-[3.5vw]">
+            <div class="font-primary text-[5vw] font-extrabold lg:text-[3.5vw]">
               <h1>Welcome</h1>
-              <h1 class="font-semibold font-secondary text-[#ff0000]">to Your Favorite</h1>
+              <h1 class="font-secondary font-semibold text-[#ff0000]">to Your Favorite</h1>
               <h1>Dining Destination</h1>
             </div>
             <div
-              class="hero-para font-cursiveHead text-[.55rem] md:text-[1rem] lg:text-[1rem] tracking-normal"
+              class="hero-para font-cursiveHead text-[.55rem] tracking-normal md:text-[1rem] lg:text-[1rem]"
             >
               <span>🍴</span>
               <span class="textGradient"> Where every meal is a celebration of flavor. </span>
@@ -312,7 +312,7 @@
             <button type="button" class="custom-button group">
               <a
                 href="/src/pages/booking.html"
-                class="flex items-center gap-3 transition-all group-hover:text-white z-[1] relative duration-700"
+                class="relative z-[1] flex items-center gap-3 transition-all duration-700 group-hover:text-white"
               >
                 Book now<i class="fa-solid fa-arrow-right fa-beat-fade"></i
               ></a>
@@ -320,27 +320,29 @@
           </div>
         </div>
         <div
-          class="hidden lg:block before:w-full before:h-full before:absolute before:top-0 before:bg-black before:opacity-15 absolute w-[45%] h-[75%] bg-[url('/img/herolg.webp')] bg-center bg-cover right-10 rounded-lg] my-auto"
+          class="rounded-lg] absolute right-10 my-auto hidden h-[75%] w-[45%] bg-[url('/img/herolg.webp')] bg-cover bg-center before:absolute before:top-0 before:h-full before:w-full before:bg-black before:opacity-15 lg:block"
         ></div>
       </section>
       <!-- end Hero-Section -->
 
       <!-- start Speciality -->
-      <section id="speciality" class="h-fit bg-custom text-black w-full flex flex-col gap-10 py-10">
+      <section id="speciality" class="flex h-fit w-full flex-col gap-10 bg-custom py-10 text-black">
         <h1
-          class="text-[28px] text-center md:text-[36px] lg:text-[48px] font-extrabold font-cursivePara tracking-widest lg:mb-4"
+          class="text-center font-cursivePara text-[28px] font-extrabold tracking-widest md:text-[36px] lg:mb-4 lg:text-[48px]"
         >
           Our Speciality
         </h1>
 
-        <div class="gap-4 lg:gap-10 grid-cols-1 grid lg:grid-cols-2 leading-[1.5rem]">
-          <div class="lg:h-[60vh] h-[40vh] overflow-hidden lg:order-1">
-            <img src="/img/beer-ham.webp" class="bg-center bg-cover w-full h-full" alt="" />
+        <div
+          class="speciality-grid grid grid-cols-1 gap-4 leading-[1.5rem] lg:grid-cols-2 lg:gap-10"
+        >
+          <div class="h-[40vh] overflow-hidden lg:order-1 lg:h-[60vh]">
+            <img src="/img/beer-ham.webp" class="h-full w-full bg-cover bg-center" alt="" />
           </div>
           <div class="lg:order-2 lg:h-[60vh]">
-            <div class="p-1 md:p-5 flex flex-col gap-5 mb-7">
-              <h2 class="font-secondary text-[20px] md:text-[32px]">Instant Food Delivery</h2>
-              <p class="font-light text-[16px]">
+            <div class="mb-7 flex flex-col gap-5 p-1 md:p-5">
+              <h2 class="font-secondary text-[20px] md:text-[32px]">Lightning Fast Feasts</h2>
+              <p class="text-[16px] font-light">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ad? Quo
                 asperiores repellendus ex beatae praesentium hic amet consequuntur dolore ipsam
                 itaque explicabo impedit nam incidunt hic odit iusto voluptatibus? Lorem ipsum
@@ -348,17 +350,23 @@
                 exercitationem modi Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Placeat, voluptas.
               </p>
+              <button type="button" class="custom-button group w-fit">
+                <a
+                  href="/src/pages/booking.html"
+                  class="relative z-[1] flex items-center gap-3 transition-all duration-700 group-hover:text-white"
+                >
+                  Order now<i class="fas fa-chevron-right fa-beat-fade mr-1"></i
+                ></a>
+              </button>
             </div>
           </div>
-          <div class="lg:h-[60vh] h-[40vh] lg:order-4 overflow-hidden">
-            <img src="/img/sweets.webp" class="bg-center bg-cover w-full h-full" alt="" />
+          <div class="h-[40vh] overflow-hidden lg:order-4 lg:h-[60vh]">
+            <img src="/img/dishes-variety.webp" class="h-full w-full bg-cover bg-center" alt="" />
           </div>
-          <div class="lg:h-[60vh] lg:order-3 mb-7">
-            <div class="p-1 md:p-5 flex flex-col gap-5 mb-7">
-              <h2 class="font-secondary text-[20px] md:text-[32px]">
-                Sweets for special occasions
-              </h2>
-              <p class="font-light text-[16px]">
+          <div class="mb-7 lg:order-3 lg:h-[60vh]">
+            <div class="mb-7 flex flex-col gap-5 p-1 md:p-5">
+              <h2 class="font-secondary text-[20px] md:text-[32px]">Delectable Delights</h2>
+              <p class="text-[16px] font-light">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ad? Quo
                 asperiores repellendus ex beatae praesentium hic amet consequuntur dolore ipsam
                 itaque explicabo impedit nam incidunt hic odit iusto voluptatibus? Lorem ipsum
@@ -366,15 +374,23 @@
                 exercitationem modi Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Placeat, voluptas.
               </p>
+              <button type="button" class="custom-button group w-fit">
+                <a
+                  href="/src/pages/aboutus.html"
+                  class="relative z-[1] flex items-center gap-3 transition-all duration-700 group-hover:text-white"
+                >
+                  Learn More<i class="fas fa-chevron-right fa-beat-fade mr-1"></i
+                ></a>
+              </button>
             </div>
           </div>
-          <div class="lg:h-[60vh] h-[40vh] lg:order-5 overflow-hidden">
-            <img src="/img/chef.webp" class="bg-center bg-cover w-full h-full" alt="" />
+          <div class="h-[40vh] overflow-hidden lg:order-5 lg:h-[60vh]">
+            <img src="/img/chef.webp" class="h-full w-full bg-cover bg-center" alt="" />
           </div>
-          <div class="lg:h-[60vh] lg:order-6 mb-7">
-            <div class="p-1 md:p-5 flex flex-col gap-5 mb-7">
-              <h2 class="font-secondary text-[20px] md:text-[32px]">Expert and Best Chefs</h2>
-              <p class="font-light text-[16px]">
+          <div class="mb-7 lg:order-6 lg:h-[60vh]">
+            <div class="mb-7 flex flex-col gap-5 p-1 md:p-5">
+              <h2 class="font-secondary text-[20px] md:text-[32px]">Masterful Chefs</h2>
+              <p class="text-[16px] font-light">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ad? Quo
                 asperiores repellendus ex beatae praesentium hic amet consequuntur dolore ipsam
                 itaque explicabo impedit nam incidunt hic odit iusto voluptatibus? Lorem ipsum
@@ -382,6 +398,14 @@
                 exercitationem modi Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Placeat, voluptas.
               </p>
+              <button type="button" class="custom-button group w-fit">
+                <a
+                  href="/src/pages/aboutus.html"
+                  class="relative z-[1] flex items-center gap-3 transition-all duration-700 group-hover:text-white"
+                >
+                  Learn More<i class="fas fa-chevron-right fa-beat-fade mr-1"></i
+                ></a>
+              </button>
             </div>
           </div>
         </div>
@@ -389,26 +413,28 @@
       <!-- end Speciality-->
 
       <!-- start -->
-      <section class="border-red-500 bg-black h-[80vh] w-full border-[5px] centered text-custom">
-        3
-      </section>
+      <section
+        class="centered h-[80vh] w-full border-[5px] border-red-500 bg-custom text-black"
+      ></section>
       <!-- end -->
       <!-- start -->
       <section
-        class="border-red-500bg bg-neutral-950 h-[50vh] lg:h-[60vh] w-full border-[5px] centered text-custom"
+        class="border-red-500bg centered h-[50vh] w-full border-[5px] bg-custom text-black lg:h-[60vh]"
       >
         4
       </section>
       <!-- end -->
-      <!-- start -->
-      <section class="border-red-500 bg-black h-[80vh] w-full border-[5px] centered text-custom">
-        5
+      <!-- start News-Letter-Form -->
+      <section
+        class="centered h-[80vh] w-full border-[5px] border-red-500 bg-black text-custom text-black"
+      >
+        <form></form>
       </section>
-      <!-- end -->
+      <!-- end News-Letter-Form  -->
     </main>
 
     <!-- start Footer -->
-    <footer class="text-black footer absolute h-fit bg-white"></footer>
+    <footer class="footer absolute h-fit bg-white text-black"></footer>
     <!-- end Footer -->
 
     <!-- start Page-Tracker-Btn -->
