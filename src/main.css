@@ -12,7 +12,7 @@
   }
 
   .navLink {
-    @apply centered border-r-[1px] border-r-white md:text-[12px] lg:text-[16px] font-semibold md:mr-[2vw] md:pr-[2.5vw] lg:mr-[3vw] lg:pr-[3vw];
+    @apply centered border-r-[1px] border-r-white font-semibold md:mr-[2vw] md:pr-[2.5vw] md:text-[12px] lg:mr-[3vw] lg:pr-[3vw] lg:text-[16px];
   }
 
   .scrollbar-thin::-webkit-scrollbar {
@@ -21,7 +21,7 @@
   }
 
   .custom-button {
-    @apply text-black px-[3px] py-[2px] font-secondary border-[1px] text-[3vw] md:text-[2vw] lg:text-[1.35vw] font-bold md:border-[2.5px] border-black hover:border-white rounded-md md:rounded-lg bg-white relative hover:after:right-0 hover:before:left-0 overflow-hidden;
+    @apply relative overflow-hidden rounded-md border-black bg-white px-[3px] py-[2px] font-secondary text-[3vw] font-bold text-black hover:border-[1px] hover:border-white hover:before:left-0 hover:after:right-0 md:rounded-lg md:text-[2vw] md:hover:border-[2.5px] lg:text-[1.35vw];
   }
 
   .custom-button::before {
