@@ -21,7 +21,7 @@
   }
 
   .custom-button {
-    @apply relative overflow-hidden rounded-md border-black bg-white px-[3px] py-[2px] font-secondary text-[3vw] font-bold text-black hover:border-[1px] hover:border-white hover:before:left-0 hover:after:right-0 md:rounded-lg md:text-[2vw] md:hover:border-[2.5px] lg:text-[1.35vw];
+    @apply relative overflow-hidden rounded-md border-[1.25px] border-black bg-white px-[3px] py-[2px] font-secondary text-[3vw] font-bold text-black hover:border-[1px] hover:border-white hover:before:left-0 hover:after:right-0 md:rounded-lg md:text-[2vw] lg:text-[1.35vw];
   }
 
   .custom-button::before {

@@ -34,7 +34,7 @@ export default {
           light: '#00aaff',
           bold: '#0044ff',
         },
-        custom: '#C0C0C0',
+        custom: '#ededed',
       },
       borderColor: {
         primary: '#00aaff',

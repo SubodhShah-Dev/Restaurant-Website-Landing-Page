@@ -167,9 +167,9 @@
           </button>
         </section>
         <hr class="my-6 border border-black" />
-        <section class="menuCenter py-5">
+        <section class="menuCenter py-7">
           <div
-            class="mb-14 mt-3 flex items-center justify-between rounded-md border-black bg-white px-3 py-1 focus-within:border-[1px] focus-within:shadow-inner"
+            class="mb-14 mt-3 flex items-center justify-between rounded-md border-black bg-white px-3 py-1 focus-within:border-[2px] focus-within:shadow-inner"
           >
             <input class="h-full w-full outline-none" type="text" placeholder="Search" />
             <button title="Search" type="button">
@@ -226,7 +226,7 @@
           </nav>
         </section>
         <hr class="my-6 border border-black" />
-        <section class="menuBottom whitespace-nowrap py-5 text-center text-[12px] font-light">
+        <section class="menuBottom whitespace-nowrap py-7 text-center text-[12px] font-light">
           <p>© 2024 David and Diners.</p>
           <p>All rights reserved.</p>
         </section>
@@ -277,11 +277,11 @@
     </div>
     <!-- end Menu-Drawer -->
 
-    <main class="relative -z-40 flex flex-col gap-10 bg-black text-white">
+    <main class="relative -z-40 flex flex-col text-white">
       <!-- start Hero-Section -->
       <section
         id="hero-section"
-        class="hero-section relative flex h-fit w-full items-center justify-center lg:h-[calc(100vh-75px)]"
+        class="hero-section relative flex h-fit w-full items-center justify-center py-7 lg:h-[calc(100vh-75px)]"
       >
         <div
           id="backdrop"
@@ -424,29 +424,99 @@
       </section>
       <!-- end Speciality-->
 
-      <!-- start -->
-      <section
-        class="centered h-[80vh] w-full border-[5px] border-red-500 bg-custom text-black"
-      ></section>
-      <!-- end -->
-      <!-- start -->
-      <section
-        class="border-red-500bg centered h-[50vh] w-full border-[5px] bg-custom text-black lg:h-[60vh]"
-      >
-        4
+      <!-- start Images-Grid -->
+      <section class="centered h-[80vh] w-full bg-[#fefefee8] py-7 text-black">
+        <div class="image-grid"></div>
       </section>
-      <!-- end -->
+      <!-- end Images-Grid -->
+
       <!-- start News-Letter-Form -->
       <section
-        class="centered h-[80vh] w-full border-[5px] border-red-500 bg-black text-custom text-black"
+        class="flex h-fit w-full flex-col bg-custom py-7 text-[16px] text-black md:flex md:flex-row"
       >
-        <form></form>
+        <div class="min-h-full w-full md:w-[60%]">
+          <img src="/img/newsletter.jpg" class="h-full w-full object-cover object-center" alt="" />
+        </div>
+        <div class="mx-auto h-fit w-full px-8 py-4 md:max-w-[45vw]">
+          <h1
+            class="mb-8 font-cursiveHead text-[22px] font-extrabold leading-snug tracking-widest lg:text-[28px]"
+          >
+            Subscribe to our News Letter.
+          </h1>
+
+          <form class="flex flex-col gap-8 font-secondary">
+            <div class="flex flex-col">
+              <div class="flex gap-5 md:flex-col">
+                <div class="flex w-[50%] flex-col md:w-[100%]">
+                  <label for="first-name" class="mb-[8px] font-semibold">First Name:</label>
+                  <input
+                    class="w-full rounded-md p-[2px] outline outline-black"
+                    type="text"
+                    id="first-name"
+                  />
+                </div>
+
+                <div class="flex w-[50%] flex-col md:w-[100%]">
+                  <label for="last-name" class="mb-[8px] font-semibold">Last Name:</label>
+                  <input
+                    class="w-full rounded-md p-[2px] outline outline-black"
+                    type="text"
+                    id="last-name"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label for="email" class="mb-[8px] font-semibold">Email:</label>
+              <input class="rounded-md p-[2px] outline outline-black" type="email" id="email" />
+            </div>
+            <div class="flex justify-between">
+              <div class="w-fit">
+                <label for="gender" class="mb-[8px] font-semibold">Gender: </label>
+                <p>
+                  <input class="" type="radio" id="male" value="male" name="gender" />
+                  <label for="male" class="font-normal">Male</label>
+                </p>
+                <p>
+                  <input
+                    class="font-normal"
+                    type="radio"
+                    id="female"
+                    value="female"
+                    name="gender"
+                  />
+                  <label for="female" class="font-normal">Female</label>
+                </p>
+              </div>
+              <div class="flex w-[50%] flex-col">
+                <label for="phone" class="mb-[8px] font-semibold">Contact Number:</label>
+                <input class="rounded-md p-[2px] outline outline-black" type="tel" id="phone" />
+              </div>
+            </div>
+            <div class="centered">
+              <button type="button" class="custom-button group w-fit">
+                <a
+                  href="/src/pages/booking.html"
+                  class="relative z-[1] flex items-center gap-3 transition-all duration-700 group-hover:text-white"
+                >
+                  Submit</a
+                >
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
       <!-- end News-Letter-Form  -->
+
+      <!-- start Testimonials-->
+      <section
+        class="centered h-[50vh] w-full bg-[#fefefee8] py-7 text-black lg:h-[60vh]"
+      ></section>
+      <!-- end Testimonials-->
     </main>
 
     <!-- start Footer -->
-    <footer class="footer absolute h-fit bg-white text-black"></footer>
+    <footer class="footer absolute h-fit bg-white py-7 text-black"></footer>
     <!-- end Footer -->
 
     <!-- start Page-Tracker-Btn -->
