@@ -43,6 +43,7 @@
       media="print"
       onload="this.media='all'"
     />
+
     <link rel="stylesheet" href="/src/main.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
@@ -509,14 +510,35 @@
       <!-- end News-Letter-Form  -->
 
       <!-- start Testimonials-->
-      <section
-        class="centered h-[50vh] w-full bg-[#fefefee8] py-7 text-black lg:h-[60vh]"
-      ></section>
+      <section class="centered h-[50vh] w-full bg-[#fefefee8] text-black lg:h-[60vh]">
+        <!-- Slider main container -->
+        <div class="swiper h-full">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper h-full">
+            <!-- Slides -->
+            <div class="swiper-slide h-full bg-red-500"><div class="user-logo`"></div></div>
+            <div class="swiper-slide h-full bg-yellow-500">
+              <div class="user-logo"></div>
+            </div>
+            <div class="swiper-slide h-full bg-green-500"><div class="user-logo"></div></div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar
+          <div class="swiper-scrollbar"></div> -->
+        </div>
+      </section>
       <!-- end Testimonials-->
     </main>
 
     <!-- start Footer -->
-    <footer class="footer absolute h-fit bg-white py-7 text-black"></footer>
+    <footer class="footer h-[50vh] bg-white py-7 text-black"></footer>
     <!-- end Footer -->
 
     <!-- start Page-Tracker-Btn -->
