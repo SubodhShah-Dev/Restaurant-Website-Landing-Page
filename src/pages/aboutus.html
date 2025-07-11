@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Business Website, First Website for beginners, Website Template"
+    />
+    <meta
+      name="description"
+      content="Dummy Website for beginner developers to practice from. Feel free to copy the design if you like it for practicing your own development skills."
+    />
+    <link rel="preload" href="/img/herolg.webp" as="image" />
+    <link rel="preload" href="/img/herosm.webp" as="image" />
+    <link rel="shortcut icon" href="/svg/mainlogo.svg" type="image/x-icon" />
+    <title>David and Diners</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="stylesheet" href="/src/main.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+
+  <body class="relative -z-50 bg-slate-50 font-primary">
+    <!-- start Navbar -->
+    <header
+      id="header"
+      class="sticky top-0 z-30 h-[75px] min-w-full bg-black px-4 text-white md:h-[64px] h-md:h-[8vh]"
+    >
+      <nav class="navbar flex h-full items-center justify-between">
+        <section class="navLeft flex max-h-full items-center justify-between p-1 text-custom">
+          <div>
+            <img
+              class="md:w-[40px]"
+              src="/svg/mainlogo.svg"
+              width="25"
+              height="25"
+              alt="MainLogo"
+            />
+          </div>
+          <div class="px-2 text-center">
+            <label
+              for="CompanyName"
+              class="textGradient centered font-cursive font-extrabold md:text-[18px] lg:text-[22px]"
+              >DAVID & DINERS</label
+            >
+          </div>
+        </section>
+        <section class="navCenter relative hidden md:block">
+          <label for="navLinksGroup" id="navLinksGroup">
+            <ul
+              id="navLinksList"
+              aria-labelledby="navLinksGroup"
+              class="flex flex-1 p-1 font-secondary"
+            >
+              <li class="navLink">
+                <a class="hover:textGradient cursor-pointer" href="/index.html">HOME</a>
+              </li>
+              <li class="navLink">
+                <a class="textGradient cursor-pointer" href="/src/pages/aboutus.html">ABOUT US</a>
+              </li>
+              <li class="navLink">
+                <a class="hover:textGradient cursor-pointer" href="src/pages/menu.html">MENU</a>
+              </li>
+              <li class="navLink border-r-0">
+                <a class="hover:textGradient cursor-pointer" href="/src/pages/contactus.html"
+                  >CONTACT US</a
+                >
+              </li>
+            </ul>
+          </label>
+        </section>
+        <section class="navRight flex items-center justify-end p-1 md:justify-end">
+          <button
+            title="Menu"
+            type="button"
+            id="hamBar"
+            class="hamburgerIcon cursor-pointer md:hidden"
+            aria-controls="sideMenu"
+            aria-expanded="false"
+          >
+            <img src="/svg/hambar.svg" width="24" height="24" alt="Menu" />
+          </button>
+          <ul class="social-media hidden space-x-5 md:flex">
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-facebook fa-lg transition-colors delay-100 duration-300 hover:text-icons"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-instagram fa-lg transition-colors delay-100 duration-300 hover:text-icons"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-twitter fa-lg transition-colors delay-100 duration-300 hover:text-icons"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <!-- end Navbar -->
+
+    <!-- start Menu-Drawer -->
+    <div
+      id="backdrop"
+      class="fixed inset-0 z-10 hidden bg-black bg-opacity-60 transition-opacity delay-150 duration-500 ease-in-out md:hidden"
+    ></div>
+    <div
+      id="menuDrawer"
+      class="menuDrawer scrollbar-thin fixed left-0 top-0 z-40 h-screen max-w-[100vw] -translate-x-full overflow-y-scroll rounded-md bg-primary px-4 transition-transform delay-150 duration-500 ease-in-out md:hidden"
+    >
+      <div class="menuWrapper text-[20px]">
+        <section class="menuTop flex h-[64px] items-center justify-between p-1">
+          <div class="flex min-w-[100px] items-center justify-between p-1">
+            <div>
+              <img
+                class="md:w-[40px]"
+                src="/svg/mainlogo.svg"
+                width="25"
+                height="25"
+                alt="MainLogo"
+              />
+            </div>
+            <div class="px-2 text-center">
+              <label for="CompanyName" class="font-cursive font-semibold">DAVID & DINERS</label>
+            </div>
+          </div>
+          <button title="Close button" type="button" id="closeBtn" class="closeBtn cursor-pointer">
+            <img src="/svg/close.svg" width="24" height="24" alt="Close button" />
+          </button>
+        </section>
+        <hr class="my-6 border border-black" />
+        <section class="menuCenter py-5">
+          <div
+            class="mb-14 mt-3 flex items-center justify-between rounded-md border-black bg-white px-3 py-1 focus-within:border-[1px] focus-within:shadow-inner"
+          >
+            <input class="h-full w-full outline-none" type="text" placeholder="Search" />
+            <button title="Search" type="button">
+              <i class="fas fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <nav for="menuLinks" class="font-secondary">
+            <ul id="menuLinks " class="menuLinks flex flex-col items-center justify-center gap-10">
+              <li class="flex w-full items-center justify-start gap-5">
+                <div class="p-2">
+                  <i class="fa-solid fa-house-chimney-window fa-xl"></i>
+                </div>
+                <a
+                  href="/index.html"
+                  aria-label="Our main homepage"
+                  class="transition-all delay-75 duration-300 ease-linear hover:text-white"
+                  >Home</a
+                >
+              </li>
+              <li class="flex w-full items-center justify-start gap-5 text-white">
+                <div class="p-2">
+                  <i class="fa-solid fa-book-open fa-beat-fade fa-xl"></i>
+                </div>
+                <a
+                  href="/src/pages/aboutus.html"
+                  aria-label="Learn more about us and what we do"
+                  class="transition-all delay-75 duration-300 ease-linear hover:text-white"
+                  >About Us</a
+                >
+              </li>
+              <li class="flex w-full items-center justify-start gap-5">
+                <div class="p-2">
+                  <i class="fa-solid fa-list-ol fa-xl"></i>
+                </div>
+                <a
+                  href="/src/pages/menu.html"
+                  aria-label="Explore all the services and products that we provide"
+                  class="transition-all delay-75 duration-300 ease-linear hover:text-white"
+                  >Menu</a
+                >
+              </li>
+              <li class="flex w-full items-center justify-start gap-5">
+                <div class="p-2">
+                  <i class="fa-solid fa-address-book fa-xl"></i>
+                </div>
+                <a
+                  href="/src/pages/contactus.html"
+                  aria-label="For more information get in touch with us"
+                  class="transition-all delay-75 duration-300 ease-linear hover:text-white"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <hr class="my-6 border border-black" />
+        <section class="menuBottom whitespace-nowrap py-5 text-center text-[12px] font-light">
+          <p>© 2024 David and Diners.</p>
+          <p>All rights reserved.</p>
+        </section>
+        <section class="social-icons">
+          <ul class="social-media m-auto my-5 flex w-[60%] items-center justify-around space-x-5">
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-facebook fa-lg transition-colors delay-100 duration-300 hover:text-white"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-instagram fa-lg transition-colors delay-100 duration-300 hover:text-white"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-twitter fa-lg transition-colors delay-100 duration-300 hover:text-white"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </section>
+        <section class="contact-info my-10 text-custom">
+          <div class="flex-col items-center justify-start" role="Contact">
+            <div class="centered mb-1">
+              <label for="phone-no" class="font-bold"
+                >📞Dial :
+                <span id="phone-no" class="font-secondary font-light">987655894302</span></label
+              >
+            </div>
+            <div class="centered">
+              <label for="email" class="font-bold"
+                >✉️Email :
+                <span id="email" class="font-secondary font-light"
+                  >David.diners327@gmail.com</span
+                ></label
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- end Menu-Drawer -->
+
+    <!-- start page-Tracker-Btn -->
+    <section class="centered fixed bottom-0 right-2 z-10">
+      <svg class="h-24 w-24">
+        <defs>
+          <linearGradient id="customGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color: #00f0ff; stop-opacity: 1" />
+            <stop offset="33%" style="stop-color: #00aaff; stop-opacity: 1" />
+            <stop offset="67%" style="stop-color: #0077ff; stop-opacity: 1" />
+            <stop offset="100%" style="stop-color: #0044ff; stop-opacity: 1" />
+          </linearGradient>
+        </defs>
+        <circle
+          cx="48"
+          cy="48"
+          r="20"
+          fill="none"
+          stroke="url(#customGradient)"
+          stroke-width="6"
+          id="border"
+        />
+
+        <i id="scrollToTop" class="fas fa-arrow-up absolute cursor-pointer text-2xl text-white"></i>
+      </svg>
+    </section>
+    <!-- end page-Tracker-Btn -->
+  </body>
+</html>
